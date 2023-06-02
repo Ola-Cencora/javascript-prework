@@ -19,17 +19,17 @@ function playGame(){
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    let ComputerMove = getMoveName(randomNumber);
+    let argComputerMove = getMoveName(randomNumber);
 
-    printMessage('Mój ruch to: ' + ComputerMove);
+    printMessage('Mój ruch to: ' + argComputerMove);
 
    // let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
     console.log('Gracz wpisał: ' + playerInput);
 
-    let PlayerMove = getMoveName(playerInput);
+    let argPlayerMove = getMoveName(playerInput);
 
-    printMessage('Twój ruch to: ' + PlayerMove);
+    printMessage('Twój ruch to: ' + argPlayerMove);
 
     function displayResult(argComputerMove, argPlayerMove){
         console.log('moves:', argComputerMove, argPlayerMove);
@@ -52,7 +52,7 @@ function playGame(){
         }
     }
 
-    displayResult(ComputerMove, PlayerMove);
+    displayResult(argComputerMove, argPlayerMove);
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
