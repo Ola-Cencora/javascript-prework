@@ -17,17 +17,17 @@
             }
         }
 
-        let randomNumber = Math.floor(Math.random() * 3 + 1);
+        const randomNumber = Math.floor(Math.random() * 3 + 1);
 
         console.log('Wylosowana liczba to: ' + randomNumber);
 
-        let argComputerMove = getMoveName(randomNumber);
+        const argComputerMove = getMoveName(randomNumber);
 
         printMessage('Mój ruch to: ' + argComputerMove);
 
         console.log('Gracz wpisał: ' + playerInput);
 
-        let argPlayerMove = getMoveName(playerInput);
+        const argPlayerMove = getMoveName(playerInput);
 
         printMessage('Twój ruch to: ' + argPlayerMove);
 
